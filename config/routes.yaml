@@ -1,3 +1,7 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+# the "app_homer" route name is not important yet
+app_home:
+    path: /home
+    controller: App\Controller\HomeController::home
