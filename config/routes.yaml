@@ -3,10 +3,9 @@
 #    controller: App\Controller\DefaultController::index
 # the "app_home" route name is not important yet
 
+app_base:
+    path: /base
+    controller: App\Controller\HomeController::base
 app_index:
     path: /
     controller: App\Controller\HomeController::index
-
-# app_base:
-#     path: /base
-#     controller: App\Controller\HomeController::base
