@@ -5,7 +5,10 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class HomeController extends AbstractController
 {
-    public function home(){
-        return $this->render('base.html.twig');
+    public function index(){
+        return $this->render('home.html.twig');
     }
+    // public function base(){
+    //     return $this->render('base.html.twig');
+    // }
 }
