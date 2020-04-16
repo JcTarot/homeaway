@@ -15,7 +15,10 @@ class HomeController extends AbstractController
      * (routes.yaml avec /)
      */
     public function index(){
-        return $this->render('pages/home.html.twig');
+        return $this->render('pages/home.html.twig', [
+            'controller_name' => 'HomeController',
+            'current_menu' => 'home',
+        ]);
     }
     /**
      * @Route("/myagency",name="myagency")
