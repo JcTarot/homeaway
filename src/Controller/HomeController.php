@@ -5,14 +5,14 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
- * @Route("/",name="home_")
+ * @Route("/")
  */
 
 class HomeController extends AbstractController
 {
     /**
-     * @Route("/home",name="away")
-     * (routes.yaml avec /)
+     * @Route("/home")
+     * (routes.yaml avec /home/)
      */
     public function index(){
         return $this->render('pages/home.html.twig', [
@@ -21,8 +21,8 @@ class HomeController extends AbstractController
         ]);
     }
     /**
-     * @Route("/myagency",name="myagency")
-     * (routes.yaml avec /base) 
+     * @Route("/myagency")
+     * (routes.yaml avec /) 
      */
     public function base(){
         return $this->render('base.html.twig');

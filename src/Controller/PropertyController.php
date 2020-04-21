@@ -13,13 +13,13 @@ class PropertyController extends AbstractController
 {
     /**
      * @Route("/estate")
+     * (routes.yaml avec /property/)
      */
     public function index()
     {
         return $this->render('property/index.html.twig', [
             'controller_name' => 'PropertyController',
             'current_menu' => 'properties',
-            'property'=>['index'=>'estate'],
         ]);
     }
 }
