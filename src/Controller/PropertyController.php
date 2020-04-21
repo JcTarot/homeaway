@@ -23,3 +23,4 @@ class PropertyController extends AbstractController
         ]);
     }
 }
+
