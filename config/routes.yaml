@@ -11,3 +11,4 @@ home:
 property:
     path: /property/
     controller: App\Controller\PropertyController::index
+
